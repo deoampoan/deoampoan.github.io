@@ -5,40 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
     <header>
-        <div class="puppy">
-            <img src="puppy.png" alt="puppy">
-        </div>
-    <section id="o">
-        <h1>Deo Ampoan</h1>
-    </section>
         <nav>
+            <a href="#" class="name">Deo Ampoan</a>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li id="contactBtn">Contact</li>
             </ul>
         </nav>
-    </header>    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a web developer .</p>
+    </header>
+    <main>
+        <section class="showcase" id="showcase">
+          <div class="showcase-text">
+             <h3>Hello, welcome</h3>
+             <h1>I'm Deo Ampoan</h1>
+             <h3><span>Frontend Developer</span></h3>
+             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+          </div>
+          <div class="showcase-image">
+            <img src="puppy.png" alt="">
+          </div>
+        </section>
+
+        <!-- experience design -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Project</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="pc1.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Neon pink, pc set-up</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="pc2.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>The best pc set-up in the world.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="pc3.jpg" alt="">
+                    <div class="portfolio-layer">
+                        <h4>Web Design</h4>
+                        <p>Nature Themed PC setup.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="pc4.jpg" alt="">
+                    <div class="portfolio-box">
+                        <h4>Web Design</h4>
+                        <p>Ultimate Gaming PC setup</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="pc5.jpg" alt="">
+                    <div class="portfolio-box">
+                        <h4>Web Design</h4>
+                        <p>Casas PC setup</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="pc6.jpg" alt="">
+                    <div class="portfolio-box">
+                        <h4>Web Design</h4>
+                        <p>Dream Gaming PC setup.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- contact section design-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p>klklklklkl</p>
-    </section>
+    <!-- footer design-->
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>ampoandeo@gmail.com</p>
-    </section>
-    <footer>
-        &copy; 2024 My Portfolio
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Codehal | All Rights Reserved.</p>
+        </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

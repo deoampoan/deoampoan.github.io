@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- box icons-->
+
+    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <a href="#" class="name">Deo Ampoan</a>
-            <ul>
+        <div class="menuIcon" id="menu-icon">     
+                <i class='bx bx-menu'></i>
+        </div> 
+            <ul class="menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li id="contactBtn">Contact</li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -33,11 +37,26 @@
           </div>
         </section>
 
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="about.jpg" alt="">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Frontend Developer</h3>
+                <p>I've been working as a front-end web developer at TypoTech for 4 years, and now seek a new challenge. I think my experience and skills in JavaScript, HTML, and CSS make me perfect for this role. I've worked in large development teams that have sharpened my technical skills, improved my communication, and made me understand what it takes to meet tight deadlines.I've recently developed web-based applications for a project management client. My involvement as a designer and a front-end developer has given me the opportunity to manage a diverse range of client requests. I have also proven myself as a team player, which is another crucial requirement for this role.My keen interest in programming and design helps me find creative solutions to technical challenges and develop visually appealing websites. My extensive knowledge of technical standards helps me manage projects efficiently.Thank you for your time and consideration. I look forward to meeting you soon and I'm happy to answer any questions you have.Regards.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
         <!-- experience design -->
         <section class="portfolio" id="portfolio">
             <h2 class="heading">Latest <span>Project</span></h2>
-
-            <div class="portfolio-container">
+            <div class="latest-container">
+                <button class="prev-btn">&lt;</button>
+                <button class="next-btn">&gt;</button>
+            <div class="carousel">
                 <div class="portfolio-box">
                     <img src="pc1.jpg" alt="">
                     <div class="portfolio-layer">
@@ -47,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-container">
+            <div class="carousel">
                 <div class="portfolio-box">
                     <img src="pc2.jpg" alt="">
                     <div class="portfolio-layer">
@@ -57,7 +76,7 @@
                 </div>
             </div>
 
-            <div class="portfolio-container">
+            <div class="carousel">
                 <div class="portfolio-box">
                     <img src="pc3.jpg" alt="">
                     <div class="portfolio-layer">
@@ -67,34 +86,35 @@
                 </div>
             </div>
 
-            <div class="portfolio-container">
+            <div class="carousel">
                 <div class="portfolio-box">
                     <img src="pc4.jpg" alt="">
-                    <div class="portfolio-box">
+                    <div class="portfolio-layer">
                         <h4>Web Design</h4>
                         <p>Ultimate Gaming PC setup</p>
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-container">
+            <div class="carousel">
                 <div class="portfolio-box">
                     <img src="pc5.jpg" alt="">
-                    <div class="portfolio-box">
+                    <div class="portfolio-layer">
                         <h4>Web Design</h4>
                         <p>Casas PC setup</p>
                     </div>
                 </div>
             </div>
 
-            <div class="portfolio-container">
+            <div class="carousel">
                 <div class="portfolio-box">
                     <img src="pc6.jpg" alt="">
-                    <div class="portfolio-box">
+                    <div class="portfolio-layer">
                         <h4>Web Design</h4>
                         <p>Dream Gaming PC setup.</p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -112,7 +132,7 @@
                 <input type="number" placeholder="Mobile Number">
                 <input type="text" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="name" id="name" cols="30" rows="10" placeholder="Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
@@ -124,6 +144,6 @@
             <p>Copyright &copy; 2024 by Codehal | All Rights Reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

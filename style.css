@@ -98,7 +98,6 @@ header {
     font-size: 2.5rem;
 }
 
-
 .latest-container {
   position: relative;
     display: flex;
@@ -118,6 +117,62 @@ header {
   transition: transform 0.5s ease;
 }
 
+.slideshow h2 {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.slide-container {
+  height: 100%;
+  background-color: #aaa;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+.slide {
+  max-height: 50%;
+  width: 60%;
+  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  user-select: none;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px; 
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.slide h4 {
+  margin: 0.50rem ;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.slide p {
+  font-size: 1.3rem;
+  margin-right: 0.50rem;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .slide img {
+  transform: scale(0.9);
+}
+
 .portfolio {
 background-color: var(--backcolor1);
 width: 100%;
@@ -131,8 +186,7 @@ flex-direction: column;
   display: flex;
   background-color: #eee;
   flex-direction: column;
-  border-radius: 20px;
-  
+  border-radius: 20px; 
 }
 
 .portfolio-box:last-child {
@@ -192,7 +246,6 @@ flex-direction: column;
 }
 
 
-
 .contact h2 {
     margin-bottom: 3rem;
     text-align: center;
@@ -218,15 +271,17 @@ flex-direction: column;
     padding: 1.5rem;
     border-radius: .8rem;
     margin: .7rem 0;
+    font-size: 1.6rem;
 }
 
 
 .contact form .input-box input {
-    width: 49%;
+    width: 40%;
 }
 
 .contact form textarea {
     resize: none;
+    width: 95%;
 }
 
 .contact form .btn {
@@ -279,7 +334,7 @@ flex-direction: column;
 }
 
 main {
-    /* padding: 20px; */
+    padding: 20px;
 }
 
 
@@ -301,6 +356,26 @@ padding: 4rem;
     font-size: 1.6rem;
 }
 
+.footer-iconTop a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background-color: var(--backcolor1);
+  border-radius: .8rem;
+  transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: black;
+}
+
 button {
     background-color: white;
     border: none;
@@ -315,7 +390,6 @@ button {
 
 button:hover {
     color: grey;
-    text-decoration: underline;
 }
 .btn{
     display: inline-block;
@@ -369,7 +443,7 @@ span {
   #menu-icon {
     display: block;
   }
-
+  
   .menu {
     position: absolute;
     top: 100%;

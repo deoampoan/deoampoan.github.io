@@ -121,20 +121,30 @@
         <section class="slideshow">
             <h2>Slide<span>Show</span></h2>
             <div class="slide-container">
+                <button class="carousel_button carousel_button--left is-hidden">
+                    <img src="left.png" alt="">
+                </button>
                 <div class="slide">
-                    <img src="pc1.jpg" alt="">
-                        <h4>Web Design</h4>
-                        <p>Neon pink, pc set-up</p>
-                    <img src="pc2.jpg" alt="">
-                        <h4>Web Design</h4>
-                        <p>The best pc set-up in the world.</p>
-                    <img src="pc3.jpg" alt="">
-                        <h4>Web Design</h4>
-                        <p>Nature Themed PC setup.</p>
-                    <img src="pc4.jpg" alt="">
-                        <h4>Web Design</h4>
-                        <p>Ultimate Gaming PC setup</p>
-                    </div>
+                    <ul class="slide_track">
+                        <li class="carousel_slide current-slide">
+                            <img class="slide_image" src="pc1.jpg" alt="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="slide_image" src="pc2.jpg" alt="">
+                        </li>
+                        <li class="carousel_slide">
+                            <img class="slide_image" src="pc3.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel_button carousel_button--right">
+                    <img src="right.png" alt="">
+                </button>
+                <div class="carousel_nav">
+                    <button class="carousel_indicator current-slide"></button>
+                    <button class="carousel_indicator"></button>
+                    <button class="carousel_indicator"></button>
+                </div>
             </div>
         </section>
     

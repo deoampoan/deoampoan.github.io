@@ -89,3 +89,10 @@ dotsNav.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, targetIndex);
 
 });
+
+// Toggling the menu 
+
+function toggleMenu() {
+    var menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+};

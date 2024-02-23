@@ -71,17 +71,17 @@ header {
     text-decoration: none;
     color: black;
     font-size: 2.5rem;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 .menu li a:hover {
   cursor: pointer;
 }
 
-#menu-icon {
+.menuIcon {
     font-size: 3rem;
     cursor: pointer;
-    display: none; /* Hide on PC devices */
+    display: none;/* Hide on PC devices */
 }
 
 
@@ -149,13 +149,12 @@ header {
   list-style: none;
   position: relative;
   height: 100%;
-  transition: transform 250ms ease-in;
+  transition: all 0.5s ease;
 }
 
 .carousel_slide {
   position: absolute;
-  top: 0;
-  bottom: 0;
+ height:100%;
   width: 100%;
 }
 
@@ -233,26 +232,6 @@ object-fit: cover;
   margin-right: 0;
 }
 
-.prev-btn ,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.prev-btn {
-  left: -60px;
-}
-
-.next-btn {
-  right: -60px;
-}
 .portfolio-box img {
     border-radius: 8px;
     margin: 12px;
@@ -482,13 +461,13 @@ span {
   margin: 2rem 0 3rem;
 }
 
-
 @media (max-width:768px) {
-  #menu-icon {
+  .menuIcon {
     display: block;
   }
   
   .menu {
+    display: flex;
     position: absolute;
     top: 100%;
     left: 0;
@@ -496,5 +475,55 @@ span {
     padding: 1rem 3%;
     border-top: .1rem solid rgba(0, 0, 0, .2);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+  }
+  .menu li {
+    margin-bottom: 10px;
+  }
+
+  .showcase {
+    margin-top: 50px;
+  }
+
+  .showcase-text h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  .showcase-text h1 {
+    font-size: 40px;
+    margin: 10px;
+  }
+  .showcase-image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-content .heading h2 {
+    font-size: 30px;
+    padding: 0 10px;
+    margin: 0px;
+  }
+
+  .about-img {
+    height: 100px;
+  }
+
+  .about-content p {
+    font-size: 20px;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  .portfolio .heading {
+    font-size: 30px;
+    padding: 0 10px;
+    margin: 10px;
+  }
+
+  .showcase-text p {
+    font-size: 30px;
   }
 }

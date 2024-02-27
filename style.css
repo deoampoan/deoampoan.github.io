@@ -8,7 +8,7 @@
   --blue: #1e90ff;
   --white: #ffffff;
   --backcolor1: #F6F8FA;
-  --icon-color: #0ef;
+  --icon-color: darkorange;
   --bg-color: #1f252d;
 }
 
@@ -73,13 +73,14 @@ header {
     text-decoration: none;
     color: black;
     font-size: 2.5rem;
-    margin: 20px;
-    position: col
+    margin-left: 4rem;
+    transition: .3s;
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu li a.active {
   cursor: pointer;
-  border-bottom: 2px grey solid;
+  color: var(--icon-color);
 }
 
 .menuIcon {
@@ -324,28 +325,28 @@ object-fit: cover;
     color:grey;
 }
 
-.showcase {
+.home {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.showcase-text h3 {
+.home-text h3 {
     font-size: 3.2rem;
     font-weight: 700;
 }
 
-.showcase-text h1 {
+.home-text h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.2;
 }
 
-.showcase-text p {
+.home-text p {
     font-size: 1.6rem;
 }
 
-.showcase-image img {
+.home-image img {
     /* width: 35vw; */
     object-fit: contain;
     width: 100%;
@@ -353,7 +354,7 @@ object-fit: cover;
 }
 
 
-.showcase-image {
+.home-image {
     border-radius: 50%;
     overflow: hidden;
     width: 300px;
@@ -391,7 +392,7 @@ object-fit: cover;
   align-items: center;
   padding: .8rem;
   background-color: var(--backcolor1);
-  border-radius: .8rem;
+  border-radius: 50%;
   transition: .5s ease;
 }
 
@@ -510,19 +511,19 @@ span {
     margin-bottom: 10px;
   }
 
-  .showcase {
+  .home {
     margin-top: 50px;
   }
 
-  .showcase-text h3 {
+  .home-text h3 {
     font-size: 20px;
     margin-bottom: 0.5rem;
   }
-  .showcase-text h1 {
+  .home-text h1 {
     font-size: 40px;
     margin: 10px;
   }
-  .showcase-image {
+  .home-image {
     object-fit: contain;
     width: 100%;
     height: 100%;
@@ -554,7 +555,7 @@ span {
     margin: 10px;
   }
 
-  .showcase-text p {
+  .home-text p {
     font-size: 30px;
   }
 }
@@ -575,19 +576,19 @@ span {
     margin: 3rem 0;
   }
 
-  .showcase {
+  .home {
     flex-direction: column;
   }
 
-  .showcase-text h3 {
+  .home-text h3 {
     font-size: 2.6rem;
   }
 
-  .showcase-text h1 {
+  .home-text h1 {
     font-size: 5rem;
   }
 
-  .showcase-image {
+  .home-image {
     width: 70vw;
     margin-top: 4rem;
   }
@@ -626,7 +627,7 @@ span {
 }
 
 @media (max-width: 365px) {
-  .showcase-image {
+  .home-image {
     width: 90vw;
   }
 

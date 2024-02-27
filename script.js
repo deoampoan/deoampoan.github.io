@@ -90,9 +90,12 @@ dotsNav.addEventListener('click', e => {
 
 });
 
-// Toggling the menu 
 
-function toggleMenu() {
-    var menu = document.querySelector('.menu');
-    menu.classList.toggle('show');
-};
+// typed js
+const typed = new Typed('.multiple-text', {
+    strings: ['Frontend Developer', 'Youtuber', 'Gamer'],
+    typedSpeed: 90,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
